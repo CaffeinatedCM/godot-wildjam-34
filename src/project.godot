@@ -11,7 +11,18 @@ config_version=4
 [application]
 
 config/name="Godot Wildjam 34"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="player"
 
 [physics]
 
@@ -19,4 +30,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/default_clear_color=Color( 0.14902, 0.192157, 0.219608, 1 )
 environment/default_environment="res://default_env.tres"
