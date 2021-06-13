@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spritesheet.png-c1650f270acee8dbf0ce233f193abd7a.stex"
+path="res://.import/CarrotGrowthSpritesheet.png-f0f528fbdbcb7a13b57455c8e1e6a63a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/Carrot/spritesheet.png"
-dest_files=[ "res://.import/spritesheet.png-c1650f270acee8dbf0ce233f193abd7a.stex" ]
+source_file="res://entities/Carrot/CarrotGrowthSpritesheet.png"
+dest_files=[ "res://.import/CarrotGrowthSpritesheet.png-f0f528fbdbcb7a13b57455c8e1e6a63a.stex" ]
 
 [params]
 

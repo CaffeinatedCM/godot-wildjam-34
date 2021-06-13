@@ -5,16 +5,16 @@
 [node name="Sandbox" type="Node2D"]
 
 [node name="Carrot" parent="." instance=ExtResource( 1 )]
-position = Vector2( 275.811, 104.768 )
+position = Vector2( 172.233, 106.752 )
 
 [node name="Carrot2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 40.0819, 119.849 )
+position = Vector2( 89.6882, 107.943 )
 
 [node name="Carrot3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 193.266, 36.9071 )
+position = Vector2( 151.597, 106.356 )
 
 [node name="Carrot4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 130.961, 106.753 )
 
 [node name="Carrot5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 56.3527, 14.2866 )
+position = Vector2( 110.324, 107.15 )
