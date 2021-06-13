@@ -2,6 +2,7 @@ extends StateMachine
 
 func _ready():
     states_map = {
-        "grow": $Grow
+        "grow": $Grow,
+        "move": $Move
     }
 
