@@ -1,4 +1,4 @@
 extends State
 
 func enter():
-    print("Hello world")
+	print("Hello world")

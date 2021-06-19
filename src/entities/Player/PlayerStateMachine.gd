@@ -1,6 +1,6 @@
 extends StateMachine
 
 func _ready():
-    states_map = {
-        "move": $Move
-    }
+	states_map = {
+		"move": $Move
+	}
