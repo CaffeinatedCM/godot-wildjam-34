@@ -340,6 +340,7 @@ blend_point_2/node = SubResource( 38 )
 blend_point_2/pos = Vector2( 0, -1 )
 blend_point_3/node = SubResource( 39 )
 blend_point_3/pos = Vector2( -1, 0 )
+blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=40]
 animation = "WalkAimDown"
@@ -362,6 +363,7 @@ blend_point_2/node = SubResource( 42 )
 blend_point_2/pos = Vector2( 0, -1 )
 blend_point_3/node = SubResource( 43 )
 blend_point_3/pos = Vector2( -1, 0 )
+blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=7]
 animation = "Idle"
@@ -424,7 +426,7 @@ states/Move/node = SubResource( 12 )
 states/Move/position = Vector2( 707.781, 108 )
 transitions = [ "Idle", "Move", SubResource( 13 ), "Move", "Idle", SubResource( 14 ), "Idle", "AttackIdle", SubResource( 32 ), "Move", "AttackIdle", SubResource( 33 ), "AttackIdle", "Move", SubResource( 34 ), "AttackIdle", "Idle", SubResource( 35 ), "AttackIdle", "AttackMove", SubResource( 45 ), "AttackMove", "AttackIdle", SubResource( 46 ), "Move", "AttackMove", SubResource( 47 ), "AttackMove", "Move", SubResource( 48 ), "AttackMove", "Idle", SubResource( 49 ), "Idle", "AttackMove", SubResource( 50 ) ]
 start_node = "Idle"
-graph_offset = Vector2( 162.781, 16 )
+graph_offset = Vector2( 160.781, 88 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=30]
 
@@ -436,7 +438,7 @@ script = ExtResource( 4 )
 texture = ExtResource( 1 )
 hframes = 3
 vframes = 8
-frame = 9
+frame = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 16 )
@@ -471,5 +473,5 @@ tree_root = SubResource( 15 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 30 )
 parameters/AttackIdle/blend_position = Vector2( 0.0270833, 0.319261 )
-parameters/AttackMove/blend_position = Vector2( 0, 0 )
+parameters/AttackMove/blend_position = Vector2( 0.0125, -0.0404624 )
 parameters/Move/blend_position = Vector2( 0, 0 )
