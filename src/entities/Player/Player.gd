@@ -11,5 +11,5 @@ func _ready():
 
 func _on_Hurtbox_area_entered(area):
     Health -= area.DAMAGE
-    print(Health)
-    pass # Replace with function body.
+    print("Player Health: " + String(Health))
+
