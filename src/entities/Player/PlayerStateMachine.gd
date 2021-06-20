@@ -2,5 +2,6 @@ extends StateMachine
 
 func _ready():
     states_map = {
-        "move": $Move
+        "move": $Move,
+        "attack": $Attack
     }

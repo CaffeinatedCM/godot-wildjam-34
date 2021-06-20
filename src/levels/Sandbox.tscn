@@ -11,7 +11,7 @@
 0/region = Rect2( 0, 0, 256, 192 )
 0/tile_mode = 1
 0/autotile/bitmask_mode = 1
-0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 495, Vector2( 0, 1 ), 50, Vector2( 0, 2 ), 146, Vector2( 1, 1 ), 176, Vector2( 1, 2 ), 56, Vector2( 2, 0 ), 455, Vector2( 2, 1 ), 152, Vector2( 2, 2 ), 186, Vector2( 3, 0 ), 16, Vector2( 3, 1 ), 26 ]
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 495, Vector2( 0, 1 ), 50, Vector2( 0, 2 ), 146, Vector2( 1, 1 ), 176, Vector2( 1, 2 ), 56, Vector2( 2, 0 ), 455, Vector2( 2, 1 ), 152, Vector2( 2, 2 ), 186, Vector2( 3, 0 ), 16, Vector2( 3, 1 ), 26, Vector2( 3, 2 ), 184 ]
 0/autotile/icon_coordinate = Vector2( 0, 0 )
 0/autotile/tile_size = Vector2( 64, 64 )
 0/autotile/spacing = 0
@@ -83,7 +83,7 @@ points = PoolVector2Array( 63.5818, 31.956, 0.406647, 31.956, 0.406647, 0, 63.58
 [node name="Floors" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 0, 0, 65537, 1, 0, 131073, 2, 0, 131073, 3, 0, 131073, 4, 0, 65538, 65536, 0, 131072, 65540, 0, 131072, 131072, 0, 65536, 131073, 0, 131073, 131074, 0, 131073, 131075, 0, 131073, 131076, 0, 65539 )
+tile_data = PoolIntArray( 0, 0, 65537, 1, 0, 131073, 2, 0, 131073, 3, 0, 131073, 4, 0, 65538, 65536, 0, 131072, 65540, 0, 131072, 131072, 0, 65536, 131073, 0, 131073, 131074, 0, 131075, 131075, 0, 131073, 131076, 0, 65539, 196610, 0, 131072, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0 )
 
 [node name="Walls" type="TileMap" parent="."]
 tile_set = SubResource( 2 )

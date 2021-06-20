@@ -21,14 +21,15 @@ func update(delta):
     input_vector = input_vector.normalized()
     
     if input_vector != Vector2.ZERO:
-        animationTree.set("parameters/Move/blend_position", input_vector)
-        animationState.travel("Move")
+        animationTree.set("parameters/AttackMove/blend_position", input_vector)
+        animationTree.set("parameters/AttackIdle/blend_position", input_vector)
+        animationState.travel("AttackMove")
         velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELRATION * delta)
     else:
-        animationState.travel("Idle")
+        animationState.travel("AttackIdle")
         velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
     
     player.move_and_slide(velocity)
-    
+
     if Input.is_action_just_pressed("draw_or_holster"):
-        emit_signal("finished", "attack")
+            emit_signal("finished", "move")
