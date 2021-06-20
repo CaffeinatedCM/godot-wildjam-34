@@ -176,8 +176,6 @@ initial_state = NodePath("Move")
 
 [node name="Move" type="Node" parent="StateMachine"]
 script = ExtResource( 3 )
-FRICTION = 500.0
-ACCELRATION = 30.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Idle = SubResource( 2 )

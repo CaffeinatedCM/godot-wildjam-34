@@ -1,7 +1,7 @@
 extends State
 
-export var FRICTION = 1000.0
-export var ACCELRATION = 100.0
+export var FRICTION = 500.0
+export var ACCELRATION = 500.0
 export var MAX_SPEED = 100.0
 
 onready var player = get_parent().get_parent()
@@ -20,8 +20,7 @@ func update(delta):
     if input_vector != Vector2.ZERO:
         animationTree.set("parameters/Move/blend_position", input_vector)
         animationState.travel("Move")
-        velocity = velocity.linear_interpolate(input_vector * MAX_SPEED, ACCELRATION * delta)
-        #velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELRATION * delta)
+        velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELRATION * delta)
     else:
         animationState.travel("Idle")
         velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
