@@ -18,9 +18,10 @@ func enter():
     playerDetector.connect("player_detected", self, "_on_player_detected")
     
 func update(delta: float):
-    var direction = carrot.global_position.direction_to(wanderController.target_position).normalized()
-    velocity = velocity.move_toward(direction * MAX_SPEED, ACCELRATION * delta)
-    velocity = carrot.move_and_slide(velocity)
+#    var direction = carrot.global_position.direction_to(wanderController.target_position).normalized()
+#    velocity = velocity.move_toward(direction * MAX_SPEED, ACCELRATION * delta)
+#    velocity = carrot.move_and_slide(velocity)
+    pass
 
 func _on_player_detected(player: Player):
     emit_signal("finished", "pursue")

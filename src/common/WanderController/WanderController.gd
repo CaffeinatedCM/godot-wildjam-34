@@ -1,8 +1,8 @@
 extends Node2D
 
 export(int) var wander_range = 32
-onready var start_position = get_node("../..").global_position
-onready var target_position = get_node("../..").global_position
+#onready var start_position = get_node("../..").global_position
+#onready var target_position = get_node("../..").global_position
 onready var timer = $Timer
 
 func update_target_position():
@@ -11,10 +11,11 @@ func update_target_position():
         rand_range(-wander_range,wander_range)
     )
 
-    target_position = start_position + target_vector
+#    target_position = start_position + target_vector
 
 func get_time_left():
-    return timer.time_left
+#    return timer.time_left
+    pass
 
 func start_wander_timer(duration):
     timer.start(duration)
