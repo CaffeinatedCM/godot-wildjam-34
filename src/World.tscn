@@ -14,8 +14,8 @@ position = Vector2( -24.9452, 211.588 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 31.5337, 35.3177 )
 current = true
-limit_left = 0
-limit_top = 0
+limit_left = -5
+limit_top = -50
 limit_smoothed = true
 smoothing_enabled = true
 smoothing_speed = 3.0
