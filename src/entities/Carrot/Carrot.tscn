@@ -1,11 +1,13 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://entities/Carrot/CarrotGrowthSpritesheet.png" type="Texture" id=1]
 [ext_resource path="res://entities/Carrot/CarrotStateMachine.gd" type="Script" id=2]
 [ext_resource path="res://entities/Carrot/Grow.gd" type="Script" id=3]
 [ext_resource path="res://entities/Carrot/Move.gd" type="Script" id=4]
 [ext_resource path="res://common/PlayerDetector/PlayerDetector.tscn" type="PackedScene" id=5]
-[ext_resource path="res://common/State.gd" type="Script" id=6]
+[ext_resource path="res://entities/Carrot/Wander.gd" type="Script" id=6]
+[ext_resource path="res://entities/Carrot/Pursue.gd" type="Script" id=7]
+[ext_resource path="res://common/WanderController/WanderController.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Growing"
@@ -41,7 +43,7 @@ height = 13.5
 
 [sub_resource type="CircleShape2D" id=3]
 
-[node name="Carrot" type="StaticBody2D"]
+[node name="Carrot" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -64,14 +66,18 @@ initial_state = NodePath("Grow")
 [node name="Grow" type="Node" parent="StateMachine"]
 script = ExtResource( 3 )
 
-[node name="Move" type="Node" parent="StateMachine"]
-script = ExtResource( 4 )
-
 [node name="Wander" type="Node" parent="StateMachine"]
 script = ExtResource( 6 )
 
+[node name="Idle" type="Node" parent="StateMachine"]
+script = ExtResource( 4 )
+
 [node name="Pursue" type="Node" parent="StateMachine"]
-script = ExtResource( 6 )
+script = ExtResource( 7 )
+ACCELRATION = 250.0
+MAX_SPEED = 75.0
+
+[node name="WanderController" parent="StateMachine" instance=ExtResource( 8 )]
 
 [node name="PlayerDetector" parent="." instance=ExtResource( 5 )]
 position = Vector2( 0, 5.875 )

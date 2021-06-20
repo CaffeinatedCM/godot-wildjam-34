@@ -3,8 +3,8 @@ extends StateMachine
 func _ready():
     states_map = {
         "grow": $Grow,
-        "move": $Move,
         "wander": $Wander,
+        "idle": $Idle,
         "pursue": $Pursue
     }
 
