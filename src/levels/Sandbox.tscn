@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://entities/Carrot/Carrot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://tilesets/FloorSpritesheet.png" type="Texture" id=2]
@@ -29,22 +29,7 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 64, 6.78598, 0.046936, 6.78598, 0.046936, 0.757813, 64, 0.757813 )
-
-[sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 64, 64, 56.9164, 64, 56.9164, 0, 64, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 6.48285, 64, 0, 64, 0, 0, 6.48285, 0 )
-
-[sub_resource type="TileSet" id=7]
+[sub_resource type="TileSet" id=2]
 0/name = "WallSpritesheet.png 0"
 0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
@@ -55,16 +40,9 @@ points = PoolVector2Array( 6.48285, 64, 0, 64, 0, 0, 6.48285, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 2 )
 0/shape_one_way = false
-0/shape_one_way_margin = 1.0
-0/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 2 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
 0/z_index = 0
 1/name = "WallSpritesheet.png 1"
 1/texture = ExtResource( 3 )
@@ -76,16 +54,9 @@ points = PoolVector2Array( 6.48285, 64, 0, 64, 0, 0, 6.48285, 0 )
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 3 )
 1/shape_one_way = false
-1/shape_one_way_margin = 1.0
-1/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 3 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
 1/z_index = 0
 2/name = "WallSpritesheet.png 2"
 2/texture = ExtResource( 3 )
@@ -97,16 +68,9 @@ points = PoolVector2Array( 6.48285, 64, 0, 64, 0, 0, 6.48285, 0 )
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 4 )
 2/shape_one_way = false
-2/shape_one_way_margin = 1.0
-2/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 4 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
 2/z_index = 0
 3/name = "WallSpritesheet.png 3"
 3/texture = ExtResource( 3 )
@@ -118,16 +82,9 @@ points = PoolVector2Array( 6.48285, 64, 0, 64, 0, 0, 6.48285, 0 )
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 5 )
 3/shape_one_way = false
-3/shape_one_way_margin = 1.0
-3/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 5 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
 3/z_index = 0
 4/name = "WallSpritesheet.png 4"
 4/texture = ExtResource( 3 )
@@ -139,16 +96,9 @@ points = PoolVector2Array( 6.48285, 64, 0, 64, 0, 0, 6.48285, 0 )
 4/navigation_offset = Vector2( 0, 0 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 6 )
 4/shape_one_way = false
-4/shape_one_way_margin = 1.0
-4/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 6 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
 4/z_index = 0
 
 [node name="Sandbox" type="Node2D"]
@@ -159,7 +109,7 @@ format = 1
 tile_data = PoolIntArray( 0, 0, 65537, 1, 0, 131073, 2, 0, 131073, 3, 0, 131073, 4, 0, 65538, 65536, 0, 131072, 65540, 0, 131072, 131072, 0, 196610, 131073, 0, 131073, 131074, 0, 131075, 131075, 0, 131073, 131076, 0, 196608, 196608, 0, 131072, 196610, 0, 131072, 196612, 0, 131072, 262144, 0, 65536, 262145, 0, 131073, 262146, 0, 196609, 262147, 0, 131073, 262148, 0, 65539 )
 
 [node name="Walls" type="TileMap" parent="."]
-tile_set = SubResource( 7 )
+tile_set = SubResource( 2 )
 show_collision = true
 collision_mask = 0
 format = 1

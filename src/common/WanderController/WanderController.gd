@@ -17,9 +17,7 @@ func get_time_left():
     return timer.time_left
 
 func start_wander_timer(duration):
-    print("Duration: " + String(duration))
     timer.start(duration)
 
 func _on_timeout():
-    print("Timer timeout")
     update_target_position()
