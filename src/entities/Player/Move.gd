@@ -20,7 +20,8 @@ func update(delta):
     if input_vector != Vector2.ZERO:
         animationTree.set("parameters/Move/blend_position", input_vector)
         animationState.travel("Move")
-        velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELRATION * delta)
+        velocity = velocity.linear_interpolate(input_vector * MAX_SPEED, ACCELRATION * delta)
+        #velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELRATION * delta)
     else:
         animationState.travel("Idle")
         velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
