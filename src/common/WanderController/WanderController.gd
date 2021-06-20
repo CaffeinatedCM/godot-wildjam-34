@@ -14,13 +14,12 @@ func update_target_position():
     target_position = start_position + target_vector
 
 func get_time_left():
-    print_debug("Timer time left...")
-    print_debug(timer.time_left)
     return timer.time_left
 
 func start_wander_timer(duration):
+    print("Duration: " + String(duration))
     timer.start(duration)
 
 func _on_timeout():
-    print_debug("Wanter Controller timed out...")
+    print("Timer timeout")
     update_target_position()

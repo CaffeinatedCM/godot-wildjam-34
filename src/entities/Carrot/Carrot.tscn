@@ -68,6 +68,7 @@ script = ExtResource( 3 )
 
 [node name="Wander" type="Node" parent="StateMachine"]
 script = ExtResource( 6 )
+ACCELRATION = 50.0
 
 [node name="Idle" type="Node" parent="StateMachine"]
 script = ExtResource( 4 )
@@ -78,6 +79,7 @@ ACCELRATION = 250.0
 MAX_SPEED = 75.0
 
 [node name="WanderController" parent="StateMachine" instance=ExtResource( 8 )]
+wander_range = 32
 
 [node name="PlayerDetector" parent="." instance=ExtResource( 5 )]
 position = Vector2( 0, 5.875 )
@@ -88,4 +90,5 @@ shape = SubResource( 3 )
 
 [connection signal="animation_finished" from="AnimationPlayer" to="StateMachine" method="_on_animation_finished"]
 
+[editable path="StateMachine/WanderController"]
 [editable path="PlayerDetector"]

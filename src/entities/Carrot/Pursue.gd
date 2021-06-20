@@ -22,4 +22,4 @@ func update(delta):
     carrot.move_and_slide(velocity)
     
 func _on_player_lost(player: Player):
-    emit_signal("finished", "wander")
+    emit_signal("finished", "idle")
