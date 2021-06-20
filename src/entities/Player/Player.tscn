@@ -6,9 +6,9 @@
 [ext_resource path="res://entities/Player/Player.gd" type="Script" id=4]
 [ext_resource path="res://entities/Player/Attack.gd" type="Script" id=5]
 
-[sub_resource type="CapsuleShape2D" id=16]
+[sub_resource type="CapsuleShape2D" id=51]
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=52]
 resource_name = "AimDown"
 loop = true
 tracks/0/type = "value"
@@ -24,7 +24,7 @@ tracks/0/keys = {
 "values": [ 15 ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=53]
 resource_name = "AimLeft"
 loop = true
 tracks/0/type = "value"
@@ -52,7 +52,7 @@ tracks/1/keys = {
 "values": [ 12 ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=54]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -79,7 +79,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=55]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -94,7 +94,7 @@ tracks/0/keys = {
 "values": [ 18 ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=56]
 resource_name = "Idle"
 loop = true
 tracks/0/type = "value"
@@ -110,7 +110,7 @@ tracks/0/keys = {
 "values": [ 9, 10 ]
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=57]
 resource_name = "WalkAimDown"
 length = 0.8
 loop = true
@@ -140,7 +140,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=58]
 length = 0.8
 loop = true
 step = 0.2
@@ -169,7 +169,7 @@ tracks/1/keys = {
 "values": [ 11, 12, 13, 12 ]
 }
 
-[sub_resource type="Animation" id=24]
+[sub_resource type="Animation" id=59]
 length = 0.8
 loop = true
 step = 0.2
@@ -198,7 +198,7 @@ tracks/1/keys = {
 "values": [ 11, 12, 13, 12 ]
 }
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=60]
 length = 0.8
 loop = true
 step = 0.2
@@ -227,7 +227,7 @@ tracks/1/keys = {
 "values": [ 17, 18, 19, 18 ]
 }
 
-[sub_resource type="Animation" id=26]
+[sub_resource type="Animation" id=61]
 resource_name = "WalkDown"
 length = 0.8
 loop = true
@@ -244,7 +244,7 @@ tracks/0/keys = {
 "values": [ 3, 4, 5, 4 ]
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=62]
 resource_name = "WalkLeft"
 length = 0.8
 loop = true
@@ -273,7 +273,7 @@ tracks/1/keys = {
 "values": [ 0, 1, 2, 1 ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=63]
 resource_name = "WalkRight"
 length = 0.8
 loop = true
@@ -302,7 +302,7 @@ tracks/1/keys = {
 "values": [ 0, 1, 2, 1 ]
 }
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=64]
 resource_name = "WalkUp"
 length = 0.8
 loop = true
@@ -428,7 +428,7 @@ transitions = [ "Idle", "Move", SubResource( 13 ), "Move", "Idle", SubResource( 
 start_node = "Idle"
 graph_offset = Vector2( 160.781, 88 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=30]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=65]
 
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
@@ -438,10 +438,10 @@ script = ExtResource( 4 )
 texture = ExtResource( 1 )
 hframes = 3
 vframes = 8
-frame = 11
+frame = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 16 )
+shape = SubResource( 51 )
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -454,24 +454,24 @@ script = ExtResource( 3 )
 script = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/AimDown = SubResource( 17 )
-anims/AimLeft = SubResource( 18 )
-anims/AimRight = SubResource( 19 )
-anims/AimUp = SubResource( 20 )
-anims/Idle = SubResource( 21 )
-anims/WalkAimDown = SubResource( 22 )
-anims/WalkAimLeft = SubResource( 23 )
-anims/WalkAimRight = SubResource( 24 )
-anims/WalkAimUp = SubResource( 25 )
-anims/WalkDown = SubResource( 26 )
-anims/WalkLeft = SubResource( 27 )
-anims/WalkRight = SubResource( 28 )
-anims/WalkUp = SubResource( 29 )
+anims/AimDown = SubResource( 52 )
+anims/AimLeft = SubResource( 53 )
+anims/AimRight = SubResource( 54 )
+anims/AimUp = SubResource( 55 )
+anims/Idle = SubResource( 56 )
+anims/WalkAimDown = SubResource( 57 )
+anims/WalkAimLeft = SubResource( 58 )
+anims/WalkAimRight = SubResource( 59 )
+anims/WalkAimUp = SubResource( 60 )
+anims/WalkDown = SubResource( 61 )
+anims/WalkLeft = SubResource( 62 )
+anims/WalkRight = SubResource( 63 )
+anims/WalkUp = SubResource( 64 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 15 )
 anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource( 30 )
+parameters/playback = SubResource( 65 )
 parameters/AttackIdle/blend_position = Vector2( 0.0270833, 0.319261 )
 parameters/AttackMove/blend_position = Vector2( 0.0125, -0.0404624 )
 parameters/Move/blend_position = Vector2( 0, 0 )
