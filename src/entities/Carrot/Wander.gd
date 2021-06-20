@@ -15,7 +15,6 @@ func enter():
     carrot = get_node("../..")
     playerDetector = get_node("../../PlayerDetector")
     wanderController = get_node("../WanderController")
-    wanderController.start_wander_timer(rand_range(0, 3))
     
     playerDetector.connect("player_detected", self, "_on_player_detected")
     
@@ -30,6 +29,7 @@ func _on_player_detected(player: Player):
     emit_signal("finished", "pursue")
 
 func randomize_state():
+    print_debug("Randomizing Wander State...")
     # Check if we want to idle instead of move, and switch to an idle state if so
     if randi() % 2:
         emit_signal("finished", "idle")

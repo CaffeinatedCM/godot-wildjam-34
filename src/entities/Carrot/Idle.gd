@@ -27,6 +27,9 @@ func randomize_state():
     print_debug("Randomizing idle state")
     if randi() % 2:
         emit_signal("finished", "wander")
+        
+    # Otherwise, start random timer on wander controller to update wander direction
+    wanderController.start_wander_timer(rand_range(0, 3))
     
 func _on_player_detected(player: Player):
     emit_signal("finished", "pursue")
