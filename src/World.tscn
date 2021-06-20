@@ -9,6 +9,7 @@
 [node name="Sandbox" parent="." instance=ExtResource( 2 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 31.5337, 35.3177 )
 collision_mask = 5
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
@@ -19,8 +20,10 @@ position = Vector2( -24.9452, 211.588 )
 collision_layer = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 31.5337, 35.3177 )
 current = true
 limit_left = 0
 limit_top = 0
 limit_smoothed = true
 smoothing_enabled = true
+smoothing_speed = 3.0
