@@ -1,5 +1,8 @@
 extends Area2D
 
+signal player_detected(player)
+signal player_lost(player)
+
 var player = null
 
 func player_detected():
@@ -7,8 +10,8 @@ func player_detected():
     
 func _on_body_entered(body: Player):
     player = body
-    print_debug("Player entered collector")
+    emit_signal("player_detected", body)
     
 func _on_body_exited(body: Player):
     player = null
-    print_debug("Player exited collector")
+    emit_signal("player_lost", body)
