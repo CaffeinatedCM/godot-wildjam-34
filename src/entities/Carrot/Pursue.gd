@@ -12,7 +12,6 @@ var carrot: KinematicBody2D = null
 var velocity = Vector2.ZERO
 
 func enter():
-    print("Hello Pursuer!")
     playerDetector.connect("player_lost", self, "_on_player_lost")
     player = playerDetector.player
     carrot = get_node("../..")
